@@ -1,5 +1,15 @@
 # IEEE Fall 2022 Autonomous UAV (AUAV) Competition Containers
 
+## Changes made by Enze Jiang
+All the new python scripts are in onboard->ws->src->auav_f22->scripts
+1. offboard.py is the scripts provided by the original repo, it will publish string info to console. 
+2. pub_dronemove.py is the take off scripts which will make the drone in the simulator take off. 
+3. sub_rgbd_image.py and sub_sensors.py and test1.py are scripts for getting the drone infomation, such as position, speed, and so on.
+4. rover_control.py and rover_planning.py and skidsteer_controller.py are scripts made by Ashvin, they are codes for rover agent. 
+
+### To run the code, simply clone the repo, and use docker compose up same as the original one.
+To test drone agent, use ros2 run auav_f22 pub_dronemove.py, it will make the drone take off.
+
 ## Submission
 To write your solutions, fork this repository.
 
