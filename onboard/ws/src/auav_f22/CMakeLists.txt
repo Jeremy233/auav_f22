@@ -29,6 +29,16 @@ install(DIRECTORY
   DESTINATION share/${PROJECT_NAME}
 )
 
+install(PROGRAMS
+  scripts/offboard.py
+  scripts/sub_rgbd_image.py
+  scripts/sub_sensors.py
+  scripts/pub_dronemove.py
+  scripts/skidsteer_controller.py
+  scripts/rover_control.py
+  scripts/rover_planning.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
